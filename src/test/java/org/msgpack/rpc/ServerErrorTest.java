@@ -4,14 +4,8 @@ import junit.framework.TestCase;
 import org.apache.log4j.BasicConfigurator;
 import org.junit.Test;
 import org.msgpack.MessageTypeException;
-import org.msgpack.rpc.builder.StopWatchDispatcherBuilder;
-import org.msgpack.rpc.error.NoMethodError;
 import org.msgpack.rpc.error.RemoteError;
-import org.msgpack.rpc.error.TimeoutError;
 import org.msgpack.rpc.loop.EventLoop;
-import org.msgpack.type.Value;
-
-import java.util.Date;
 
 /**
  * Test when server throws exceptions.

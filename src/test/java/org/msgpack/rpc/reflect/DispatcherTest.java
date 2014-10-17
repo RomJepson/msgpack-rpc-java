@@ -17,16 +17,12 @@
 //
 package org.msgpack.rpc.reflect;
 
-import org.msgpack.*;
-import org.msgpack.rpc.*;
-import org.msgpack.rpc.dispatcher.*;
-import org.msgpack.rpc.config.*;
-import org.msgpack.rpc.loop.*;
-import org.msgpack.rpc.loop.netty.*;
-import java.util.*;
-import junit.framework.*;
 import org.junit.Test;
+import org.msgpack.rpc.Client;
 import org.msgpack.type.Value;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DispatcherTest extends ReflectTest {
 	@Test

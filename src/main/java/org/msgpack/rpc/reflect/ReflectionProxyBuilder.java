@@ -17,16 +17,19 @@
 //
 package org.msgpack.rpc.reflect;
 
-import java.io.IOException;
-import java.util.Map;
-import java.util.HashMap;
-import java.lang.reflect.*;
-import org.msgpack.rpc.*;
-import org.msgpack.*;
-import org.msgpack.rpc.loop.netty.MessagePackEncoder;
-import org.msgpack.template.*;
+import org.msgpack.MessagePack;
+import org.msgpack.rpc.Future;
+import org.msgpack.rpc.Session;
+import org.msgpack.template.Template;
 import org.msgpack.type.Value;
 import org.msgpack.unpacker.Converter;
+
+import java.io.IOException;
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ReflectionProxyBuilder extends ProxyBuilder {
 

@@ -17,8 +17,9 @@
 //
 package org.msgpack.rpc.reflect;
 
-import java.lang.reflect.*;
-import org.msgpack.rpc.Future;
+import java.lang.reflect.Method;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 
 public abstract class ProxyBuilder {
 	public static class MethodEntry {

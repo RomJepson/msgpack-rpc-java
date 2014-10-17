@@ -17,10 +17,10 @@
 //
 package org.msgpack.rpc.config;
 
+import org.msgpack.rpc.address.Address;
+
 import java.util.HashMap;
 import java.util.Map;
-
-import org.msgpack.rpc.address.Address;
 
 public class ServerConfig {
     private Address listenAddress;

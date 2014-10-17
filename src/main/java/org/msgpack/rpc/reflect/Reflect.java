@@ -19,9 +19,9 @@ package org.msgpack.rpc.reflect;
 
 import org.msgpack.MessagePack;
 
-import java.util.Map;
-import java.util.HashMap;
 import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Reflect {
     /*

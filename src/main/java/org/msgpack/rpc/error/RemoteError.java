@@ -17,7 +17,8 @@
 //
 package org.msgpack.rpc.error;
 
-import org.msgpack.*;
+import org.msgpack.MessagePackable;
+import org.msgpack.MessageTypeException;
 import org.msgpack.packer.Packer;
 import org.msgpack.type.Value;
 import org.msgpack.type.ValueFactory;

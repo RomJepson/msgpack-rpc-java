@@ -17,20 +17,21 @@
 //
 package org.msgpack.rpc.loop.netty;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.ScheduledExecutorService;
 import org.jboss.netty.channel.socket.ClientSocketChannelFactory;
 import org.jboss.netty.channel.socket.ServerSocketChannelFactory;
 import org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory;
 import org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory;
 import org.msgpack.MessagePack;
-import org.msgpack.rpc.Session;
 import org.msgpack.rpc.Server;
-import org.msgpack.rpc.loop.EventLoop;
-import org.msgpack.rpc.transport.ServerTransport;
-import org.msgpack.rpc.transport.ClientTransport;
-import org.msgpack.rpc.config.TcpServerConfig;
+import org.msgpack.rpc.Session;
 import org.msgpack.rpc.config.TcpClientConfig;
+import org.msgpack.rpc.config.TcpServerConfig;
+import org.msgpack.rpc.loop.EventLoop;
+import org.msgpack.rpc.transport.ClientTransport;
+import org.msgpack.rpc.transport.ServerTransport;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.ScheduledExecutorService;
 
 public class NettyEventLoop extends EventLoop {
     public NettyEventLoop(ExecutorService workerExecutor,

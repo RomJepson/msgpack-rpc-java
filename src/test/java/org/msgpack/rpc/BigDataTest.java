@@ -1,13 +1,14 @@
 package org.msgpack.rpc;
 
-import org.msgpack.*;
-import org.msgpack.rpc.dispatcher.*;
-import org.msgpack.rpc.loop.*;
-import java.util.*;
-import junit.framework.*;
+import junit.framework.TestCase;
 import org.junit.Test;
+import org.msgpack.MessagePack;
+import org.msgpack.rpc.dispatcher.Dispatcher;
+import org.msgpack.rpc.loop.EventLoop;
 import org.msgpack.type.Value;
 import org.msgpack.type.ValueFactory;
+
+import java.util.Random;
 
 public class BigDataTest extends TestCase {
 	

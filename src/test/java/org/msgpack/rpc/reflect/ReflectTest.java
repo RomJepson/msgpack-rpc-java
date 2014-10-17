@@ -17,15 +17,16 @@
 //
 package org.msgpack.rpc.reflect;
 
+import junit.framework.TestCase;
 import org.msgpack.MessagePack;
-import org.msgpack.rpc.*;
-import org.msgpack.rpc.dispatcher.*;
-import org.msgpack.rpc.loop.*;
+import org.msgpack.rpc.Callback;
+import org.msgpack.rpc.Client;
+import org.msgpack.rpc.Server;
+import org.msgpack.rpc.dispatcher.MethodDispatcher;
+import org.msgpack.rpc.loop.EventLoop;
 
 import java.lang.reflect.Method;
-import java.util.*;
-
-import junit.framework.*;
+import java.util.List;
 
 public abstract class ReflectTest extends TestCase {
 

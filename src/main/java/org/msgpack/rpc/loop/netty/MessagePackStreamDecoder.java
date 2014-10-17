@@ -17,16 +17,17 @@
 //
 package org.msgpack.rpc.loop.netty;
 
-import java.io.ByteArrayInputStream;
-import java.io.EOFException;
-import java.nio.ByteBuffer;
+import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelHandlerContext;
-import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.handler.codec.frame.FrameDecoder;
 import org.msgpack.MessagePack;
 import org.msgpack.type.Value;
 import org.msgpack.unpacker.Unpacker;
+
+import java.io.ByteArrayInputStream;
+import java.io.EOFException;
+import java.nio.ByteBuffer;
 
 public class MessagePackStreamDecoder extends FrameDecoder {
     protected MessagePack msgpack;

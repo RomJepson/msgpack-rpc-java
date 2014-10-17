@@ -17,9 +17,9 @@
 //
 package org.msgpack.rpc;
 
-import org.msgpack.type.Value;
 import org.msgpack.rpc.message.ResponseMessage;
 import org.msgpack.rpc.transport.MessageSendable;
+import org.msgpack.type.Value;
 
 public class Request implements Callback<Object> {
     private MessageSendable channel; // TODO #SF synchronized?

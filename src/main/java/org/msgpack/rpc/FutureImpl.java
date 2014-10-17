@@ -17,10 +17,11 @@
 //
 package org.msgpack.rpc;
 
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
 import org.msgpack.type.Value;
 import org.msgpack.type.ValueFactory;
+
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 class FutureImpl {
     private Session session;

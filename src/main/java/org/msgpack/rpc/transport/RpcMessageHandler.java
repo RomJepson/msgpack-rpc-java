@@ -17,11 +17,11 @@
 //
 package org.msgpack.rpc.transport;
 
-import org.msgpack.type.Value;
-import org.msgpack.rpc.message.Messages;
-import org.msgpack.rpc.Session;
 import org.msgpack.rpc.Server;
+import org.msgpack.rpc.Session;
 import org.msgpack.rpc.loop.EventLoop;
+import org.msgpack.rpc.message.Messages;
+import org.msgpack.type.Value;
 
 public class RpcMessageHandler {
     protected final Session session;

@@ -17,16 +17,11 @@
 //
 package org.msgpack.rpc;
 
-import org.msgpack.*;
-import org.msgpack.rpc.*;
-import org.msgpack.rpc.dispatcher.*;
-import org.msgpack.rpc.config.*;
-import org.msgpack.rpc.loop.*;
-import org.msgpack.rpc.loop.netty.*;
-import java.util.*;
-import java.util.concurrent.TimeUnit;
-import junit.framework.*;
+import junit.framework.TestCase;
 import org.junit.Test;
+import org.msgpack.rpc.loop.EventLoop;
+
+import java.util.concurrent.TimeUnit;
 
 public class FutureTest extends TestCase {
     public static class TestHandler {

@@ -17,9 +17,10 @@
 //
 package org.msgpack.rpc.reflect;
 
-import java.lang.reflect.*;
-import java.util.List;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 import java.util.ArrayList;
+import java.util.List;
 
 public class MethodSelector {
     public static Method[] selectRpcServerMethod(Class<?> iface) {

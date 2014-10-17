@@ -17,22 +17,22 @@
 //
 package org.msgpack.rpc.loop;
 
-import java.io.IOException;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-
 import org.msgpack.MessagePack;
-import org.msgpack.rpc.Session;
 import org.msgpack.rpc.Server;
-import org.msgpack.rpc.transport.ClientTransport;
-import org.msgpack.rpc.transport.ServerTransport;
+import org.msgpack.rpc.Session;
 import org.msgpack.rpc.config.ClientConfig;
 import org.msgpack.rpc.config.ServerConfig;
 import org.msgpack.rpc.config.TcpClientConfig;
 import org.msgpack.rpc.config.TcpServerConfig;
 import org.msgpack.rpc.loop.netty.NettyEventLoopFactory;
+import org.msgpack.rpc.transport.ClientTransport;
+import org.msgpack.rpc.transport.ServerTransport;
+
+import java.io.IOException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public abstract class EventLoop {
     static private EventLoopFactory loopFactory;

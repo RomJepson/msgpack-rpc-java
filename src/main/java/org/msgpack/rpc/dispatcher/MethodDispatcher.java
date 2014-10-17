@@ -17,14 +17,15 @@
 //
 package org.msgpack.rpc.dispatcher;
 
-import java.io.IOException;
-import java.util.Map;
-import java.util.HashMap;
-import java.lang.reflect.*;
+import org.msgpack.rpc.Request;
 import org.msgpack.rpc.reflect.Invoker;
-import org.msgpack.rpc.reflect.Reflect;
 import org.msgpack.rpc.reflect.MethodSelector;
-import org.msgpack.rpc.*;
+import org.msgpack.rpc.reflect.Reflect;
+
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MethodDispatcher implements Dispatcher {
     protected Map<String, Invoker> methodMap;

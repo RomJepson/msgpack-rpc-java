@@ -17,20 +17,20 @@
 //
 package org.msgpack.rpc.loop.netty;
 
-import java.util.Map;
-
+import org.jboss.netty.bootstrap.ClientBootstrap;
+import org.jboss.netty.buffer.ChannelBufferOutputStream;
+import org.jboss.netty.buffer.ChannelBuffers;
+import org.jboss.netty.buffer.HeapChannelBufferFactory;
 import org.jboss.netty.channel.Channel;
-import org.jboss.netty.channel.Channels;
 import org.jboss.netty.channel.ChannelFuture;
 import org.jboss.netty.channel.ChannelFutureListener;
-import org.jboss.netty.buffer.ChannelBuffers;
-import org.jboss.netty.buffer.ChannelBufferOutputStream;
-import org.jboss.netty.buffer.HeapChannelBufferFactory;
-import org.jboss.netty.bootstrap.ClientBootstrap;
+import org.jboss.netty.channel.Channels;
 import org.msgpack.rpc.Session;
 import org.msgpack.rpc.config.TcpClientConfig;
-import org.msgpack.rpc.transport.RpcMessageHandler;
 import org.msgpack.rpc.transport.PooledStreamClientTransport;
+import org.msgpack.rpc.transport.RpcMessageHandler;
+
+import java.util.Map;
 
 class NettyTcpClientTransport extends PooledStreamClientTransport<Channel, ChannelBufferOutputStream> {
     private static final String TCP_NO_DELAY = "tcpNoDelay";

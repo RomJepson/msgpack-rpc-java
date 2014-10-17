@@ -17,18 +17,10 @@
 //
 package org.msgpack.rpc.reflect;
 
-import org.msgpack.*;
-import org.msgpack.rpc.*;
-import org.msgpack.rpc.dispatcher.*;
-import org.msgpack.rpc.config.*;
-import org.msgpack.rpc.loop.*;
-import org.msgpack.rpc.loop.netty.*;
-import java.util.*;
-
-import junit.framework.*;
-
-import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ProxyTest extends ReflectTest {
 	

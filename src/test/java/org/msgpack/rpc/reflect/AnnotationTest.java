@@ -17,16 +17,10 @@
 //
 package org.msgpack.rpc.reflect;
 
-import org.msgpack.*;
-import org.msgpack.annotation.*;
-import org.msgpack.rpc.*;
-import org.msgpack.rpc.dispatcher.*;
-import org.msgpack.rpc.config.*;
-import org.msgpack.rpc.loop.*;
-import org.msgpack.rpc.loop.netty.*;
-import java.util.*;
-import junit.framework.*;
 import org.junit.Test;
+import org.msgpack.annotation.Ignore;
+import org.msgpack.annotation.Index;
+import org.msgpack.annotation.Optional;
 
 public class AnnotationTest extends ReflectTest {
 	public static interface IgnoreTest {

@@ -17,12 +17,11 @@
 //
 package org.msgpack.rpc.message;
 
-import java.io.IOException;
 import org.msgpack.MessagePackable;
 import org.msgpack.packer.Packer;
-import org.msgpack.type.Value;
-import org.msgpack.MessageTypeException;
 import org.msgpack.unpacker.Unpacker;
+
+import java.io.IOException;
 
 public class RequestMessage implements MessagePackable {
     private int msgid;

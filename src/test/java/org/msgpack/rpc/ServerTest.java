@@ -17,18 +17,11 @@
 //
 package org.msgpack.rpc;
 
-import org.apache.log4j.BasicConfigurator;
-import org.msgpack.*;
-import org.msgpack.rpc.*;
-import org.msgpack.rpc.builder.StopWatchDispatcherBuilder;
-import org.msgpack.rpc.dispatcher.*;
-import org.msgpack.rpc.config.*;
-import org.msgpack.rpc.loop.*;
-import org.msgpack.rpc.loop.netty.*;
-import java.util.*;
-import junit.framework.*;
+import junit.framework.TestCase;
 import org.junit.Test;
-import org.msgpack.template.Template;
+import org.msgpack.MessagePack;
+import org.msgpack.rpc.dispatcher.Dispatcher;
+import org.msgpack.rpc.loop.EventLoop;
 import org.msgpack.type.Value;
 import org.msgpack.type.ValueFactory;
 
